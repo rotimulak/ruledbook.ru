@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Тетрадь в линейку</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/favico.png" type="image/x-icon" />
+  </head>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      /* background: gray; */
+      font-family: "Roboto", sans-serif;
+    }
+
+    #fullpage {
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+      /* background: blue; */
+
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+
+      align-items: center;
+    }
+    .block {
+      display: none;
+      min-width: 320px;
+      /* width: 100%; */
+
+      /* min-height: 600px; */
+      height: 100px;
+
+      margin: 0 auto;
+
+      background: #f0f0f0 url("assets/ruledbook.png") no-repeat center center;
+      background-size: contain;
+      text-align: center;
+      display: flex;
+
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+
+      align-items: center;
+    }
+    .paper {
+      /* background: green; */
+      width: 100%;
+      /* height: 100%; */
+      text-align: center;
+      padding: 0 80pt;
+      display: none;
+    }
+    .mhead {
+      font-size: 20pt;
+      padding-bottom: 10pt;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+    .msubhead {
+      padding-bottom: 10pt;
+      font-size: 14pt;
+    }
+    .mabout {
+      font-size: 12pt;
+      padding-bottom: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+    .mtext {
+      text-align: left;
+    }
+  </style>
+
+  <body>
+    <div id="fullpage">
+      <div class="container">
+        <div class="block">
+          <div class="paper">
+            <div class="mhead">Тетрадь в линейку</div>
+            <div class="msubhead">(не)настоящее издательство</div>
+
+            <br />
+            <br />
+            <div class="mabout">О проекте</div>
+            <div class="mtext">
+              Тетрадь в линейку − это издательская серия, объединяющих
+              современные художественные тексты, находящиеся вне привычных
+              жанровых и стилистических тенденций. Каждая тетрадь проекта
+              предлагает для размышлений и экспериментов одну тему, отсылающую к
+              предмету, который проходят в школе, и к абстрактному явлению,
+              которое каждый постигает самостоятельно. Тексты в тетрадь
+              отбираются по итогам open call. После завершения отбора выбранные
+              тексты будут опубликованы микро-тиражом (до 99 экземпляров) в
+              формате школьной тетради.
+            </div>
+
+            <div class="mdetails">Open Call на обложку</div>
+            <div class="mdetails">Темы номеров</div>
+            <div class="mdetails">Open Call на тексты</div>
+            <div class="mdetails">Ридеры</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
