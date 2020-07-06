@@ -17,7 +17,7 @@ a:hover {
 }
 
 #fullpage {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .container {
@@ -72,11 +72,18 @@ a:hover {
 
 
 /* styling paper */
+@media (min-width: 200px) {
+    #paper {
+        /* background-color: red; */
+        /* width: 100%; */
+    }
+}
+
 #paper {
     width: 600px;
     height: 700px;
     position: relative;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: white;
