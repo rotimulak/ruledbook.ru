@@ -1,106 +1,112 @@
-html {}
-
 body {
-    background: linear-gradient(#b4f0af 25%,
-            rgba(0, 255, 255, 0) 50%,
-            rgba(0, 255, 255, 0) 50%,
-            #b4f0af 100%);
+  background: linear-gradient(
+    #b4f0af 25%,
+    rgba(0, 255, 255, 0) 50%,
+    rgba(0, 255, 255, 0) 50%,
+    #b4f0af 100%
+  );
 }
 
 #container-paper {
-    position: absolute;
-    /* padding-top: 0px; */
-    /* margin-top: 20px; */
-    width: 100%;
-    height: 100%;
-    text-align: center;
+  position: absolute;
+  /* padding-top: 0px; */
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
 .wrap {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0 auto;
-    perspective: 360px;
-    perspective-origin: 50% 50%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  margin: 0 auto;
+  perspective: 360px;
+  perspective-origin: 50% 50%;
 }
 
 .ava {
-    width: 200px;
-    height: auto;
-    padding-right: 24px;
+  width: 200px;
+  height: auto;
+  padding-right: 24px;
 }
 
 .container-lr {
-    display: flex;
+  display: flex;
+  width: 100%;
+  align-content: space-between;
+  margin-top: -7px;
 }
 
-.first-container {
-    margin-top: -7px;
+.container-lr > div {
+  width: 50%;
+  text-align: center;
 }
 
 .fio {
-    margin-top: 7px;
+  margin-top: 7px;
 }
 
 .top-plane,
 .bottom-plane {
-    width: 200%;
-    height: 130%;
-    position: absolute;
-    bottom: -30%;
-    left: -50%;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 2px,
-            transparent 2px);
-    background-size: 100px 100px, 100px 100px;
-    background-position: -1px -1px, -1px -1px;
-    transform: rotateX(85deg);
-    animation: planeMoveTop 2s infinite linear;
-    -webkit-animation: planeMoveTop 2s infinite linear;
-    -webkit-transform: rotateX(85deg);
-    -moz-transform: rotateX(85deg);
-    -ms-transform: rotateX(85deg);
-    -o-transform: rotateX(85deg);
+  width: 200%;
+  height: 130%;
+  position: absolute;
+  bottom: -30%;
+  left: -50%;
+  background-image: -webkit-linear-gradient(
+    rgba(255, 255, 255, 1) 2px,
+    transparent 2px
+  );
+  background-size: 100px 100px, 100px 100px;
+  background-position: -1px -1px, -1px -1px;
+  transform: rotateX(85deg);
+  animation: planeMoveTop 2s infinite linear;
+  -webkit-animation: planeMoveTop 2s infinite linear;
+  -webkit-transform: rotateX(85deg);
+  -moz-transform: rotateX(85deg);
+  -ms-transform: rotateX(85deg);
+  -o-transform: rotateX(85deg);
 }
 
 .bottom-plane {
-    transform: rotateX(-85deg);
-    top: -30%;
-    animation: planeMoveBot 2s infinite linear;
-    -webkit-transform: ;
-    -moz-transform: ;
-    -ms-transform: ;
-    -o-transform: ;
+  transform: rotateX(-85deg);
+  top: -30%;
+  animation: planeMoveBot 2s infinite linear;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 
 @keyframes planeMoveTop {
-    from {
-        background-position: 0px -100px, 0px 0px;
-    }
+  from {
+    background-position: 0px -100px, 0px 0px;
+  }
 
-    to {
-        background-position: 0px 0px, 0 0px;
-    }
+  to {
+    background-position: 0px 0px, 0 0px;
+  }
 }
 
 @keyframes planeMoveBot {
-    from {
-        background-position: 0px 0px, 0px 0px;
-    }
+  from {
+    background-position: 0px 0px, 0px 0px;
+  }
 
-    to {
-        background-position: 0px -100px, 0 0px;
-    }
+  to {
+    background-position: 0px -100px, 0 0px;
+  }
 }
 
 @media (max-height: 350px) {
-    .wrap {
-        perspective: 210px;
-    }
+  .wrap {
+    perspective: 210px;
+  }
 }
